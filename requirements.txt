@@ -1,0 +1,25 @@
+# =============================================================================
+# Numerical Differentiation & Richardson Extrapolation
+# Dependency manifest. Versions pinned to ranges that are known to be stable
+# on Python 3.10 - 3.13 (recommended: 3.12.x).
+# Use:  pip install -r requirements.txt
+# =============================================================================
+
+# --- UI framework ------------------------------------------------------------
+streamlit>=1.39,<2.0          # Reactive web UI
+
+# --- Numerical / scientific stack -------------------------------------------
+numpy>=1.26,<3.0              # Vectorized array math
+sympy>=1.13,<2.0              # Symbolic algebra (parsing & analytical derivatives)
+pandas>=2.2,<3.0              # Tabular data for iteration tables
+
+# --- Visualization -----------------------------------------------------------
+plotly>=5.22,<7.0             # Interactive charts (function, error, convergence)
+
+# --- Quality of life (optional but recommended) -----------------------------
+typing-extensions>=4.10       # Backport of newer typing features
+
+# --- Dev tools (uncomment to enable) ----------------------------------------
+# pytest>=8.0,<9.0
+# ruff>=0.5
+# mypy>=1.10

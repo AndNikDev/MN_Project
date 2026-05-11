@@ -1,0 +1,27 @@
+# Project metadata (PEP 621). Kept minimal; runtime deps live in requirements.txt
+# so the project can be installed as a plain venv project.
+
+[project]
+name = "mn-three-points-richardson"
+version = "0.1.0"
+description = "Numerical differentiation (three-point formula) and Richardson extrapolation showcase, built with Streamlit."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+authors = [
+    { name = "Betsabe Camaño" },
+    { name = "Neythan Alvarado" },
+    { name = "Nikolayk Muñoz" },
+    { name = "Yendry Vallejos" },
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "PL"]
+ignore = ["PLR0913"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
